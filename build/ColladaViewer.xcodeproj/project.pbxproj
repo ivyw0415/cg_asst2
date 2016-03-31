@@ -1,0 +1,2078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		058786721DE44AE583ED32A8 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9429A93B02A34C319CABE1FE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				915A8A7301EA45328AFFF44D /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		17603B337AE840CCBE0E62E9 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 378208EB2ACD48BA99FB76C9 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				C7FFFEE387B341B489F761AE /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		8BCF5B7AE34540DCA2AECB23 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48A345957BF04B659D4722FD /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				C27352A86444408AB760E062 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D82EE4C85D314DD7AAB384BB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		9C1CB5C0BC1B42D198DEC15F /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EFFCCD1800B24EC7B69921F8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				26AADF6A749347849846C6D5 /* CMake Rules */,
+			);
+			dependencies = (
+				B3A54045EF034543BEA65306 /* PBXTargetDependency */,
+				E85D8F3B340442EC8C13087E /* PBXTargetDependency */,
+				0ECC458EF72A4E8C960C398E /* PBXTargetDependency */,
+				CB7C4EEC20C5474F9226DA7D /* PBXTargetDependency */,
+				159B5B97C24F4AB5BEA903D8 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0181D0FBC47646A9B14D8DC2 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B06276984AB4ADA93AAB7EB /* glew.c */; settings = {COMPILER_FLAGS = ""; }; };
+		054A08F6331D410398762C79 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = E96F4034E0D64DE4AA20AE9D /* monitor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		06130933DE1846BD9834E82E /* vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9328290529ED46D088D78199 /* vector4D.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		13B549182ED949FD958B31A6 /* meshEdit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD6D351DAC4E9497613CF5 /* meshEdit.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1A1BA4D8CC6846F89FAC8827 /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27D0C67464F84C6FB1A09DAD /* light.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2FDE9FDDAE5140549A782FE2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4EABAAD2D484A4A92C43717 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		31DC4E6C19C9461FBCEF8545 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = AD08F93F1FAA4351867E6B7B /* init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4F31F3E1FF1347B9B3FCB4DD /* osdfont.c in Sources */ = {isa = PBXBuildFile; fileRef = 2669F5FF2EB4462C97725134 /* osdfont.c */; settings = {COMPILER_FLAGS = ""; }; };
+		5F2A18E2E3FE4E15B1E012A7 /* iokit_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BC2EFA05A94782902FED51 /* iokit_joystick.m */; settings = {COMPILER_FLAGS = ""; }; };
+		62C1A75F83AD4842AB5E8D42 /* glewinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 252F7FEB398C461EA611AB64 /* glewinfo.c */; settings = {COMPILER_FLAGS = ""; }; };
+		66CB941D833B4C61A03E1EF7 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D43B2C92A5E74354A6E3EDED /* scene.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		707C8280DC4B451FA987BC44 /* viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D455AD75B0354DF9A5875A72 /* viewer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		775D6C0B7AF449D9B0AE1B04 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = E32B1B148C8248EFBCB716F2 /* nsgl_context.m */; settings = {COMPILER_FLAGS = ""; }; };
+		7D4AE02048214AAD9E439364 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 87333CEFEBA742F886322EB4 /* cocoa_init.m */; settings = {COMPILER_FLAGS = ""; }; };
+		81B6177365544F8EAC7D3244 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = D7D56999D89A48C18188B48C /* input.c */; settings = {COMPILER_FLAGS = ""; }; };
+		848292D563694943B1EDA8EB /* mach_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 019ED2EE83FA4FDC8F85520D /* mach_time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		88DD37318A65404DB5209681 /* visualinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E4BDBB9724656A04D926F /* visualinfo.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8A6B4E858E1549278C6BE506 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED631A3C013A4C0E989E4BF8 /* mesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		905FE383CA224EF99CB6A60C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF480DF211844352B2C28DE4 /* texture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9981B0E45B81463BAADE2612 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF09CCE83D84552A2386398 /* camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9FD682E5F1D64421A99040BF /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A0DE6CFB40F99C628D22 /* color.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A417BF6778AC4A219797E17E /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 97D7A35DFC3943CD8D8A73FB /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B158E14DAA034ECA861C02EB /* student_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63A632D6489743E9A228BFFF /* student_code.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B1A3639E994243F195A9C631 /* matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F6540831B0A42739362D94B /* matrix4x4.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BA1F7DC08BEC4B1DA4378C20 /* vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D94D1B6A1A0B47AF829EBA63 /* vector3D.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BF3AD280C2CB4AFA904FC5B7 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EC8C868D94C06A919E530 /* cocoa_window.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C86BC53F05804DC1B387C738 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5AE6DBBB11D47659BF094A1 /* base64.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CB1A7954BEA44D269BEFD073 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 05ED674A9274452EA4821461 /* posix_tls.c */; settings = {COMPILER_FLAGS = ""; }; };
+		CECE7D055D3B45A3B61C459C /* osdtext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAC054F737B04023BED68BBC /* osdtext.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D902676F9BE24391B701EC1A /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E81FF42C15B84C409F9FCF43 /* tinyxml2.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DA023CDEC17F4BFAA7483320 /* halfEdgeMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F88D457082974D2DA1B0E4A4 /* halfEdgeMesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DA4977906F0443CF82890FD7 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0A057CE000B443BB7E5B68F /* material.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E641F67ED9E64C71BE4EF19E /* complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F7B49468EC4410B7C62E13 /* complex.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E7F74BAA0E64438386CCD4D5 /* collada.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552AF963F0BE49C89B0CAEA8 /* collada.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EAD9907709E04B73A3C99992 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9991765D7E9B4903A82287AE /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = ""; }; };
+		EBE6B1CD2C164661AC31B167 /* quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73D09ED1E8C34D299D989E04 /* quaternion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F39FBA53461947B38CCF232C /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A1ED67D6646CF89006AA1 /* window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F4A97F829B2942FCA6F3BDDE /* vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F047D8FC80E04F109985F155 /* vector2D.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FBA2E930AD354806B2E609BD /* matrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03921E4F722145C0BBBF2D5B /* matrix3x3.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1538068879264D2D9599AC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39C534FF1FA46898FD01AF1;
+			remoteInfo = glfw;
+		};
+		1C559D398F3447A99FFD65A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7BDC5B70B245FDB6F0C7CE;
+			remoteInfo = CMU462;
+		};
+		A316C09F74D64A16BFFD0658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1CB5C0BC1B42D198DEC15F;
+			remoteInfo = ALL_BUILD;
+		};
+		A41A989AFA314DBD90578D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A224FFC21174872B7D95C9F;
+			remoteInfo = glew;
+		};
+		A9175A9C13CD44168A93DC31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 058786721DE44AE583ED32A8;
+			remoteInfo = ZERO_CHECK;
+		};
+		B6D1E116D4DB4C6F88C2CCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39C534FF1FA46898FD01AF1;
+			remoteInfo = glfw;
+		};
+		C0D2B9F2B57B4D709687FC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7BDC5B70B245FDB6F0C7CE;
+			remoteInfo = CMU462;
+		};
+		D288C1B286334B4E8689762A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E65FC0317534611B7E17305;
+			remoteInfo = meshedit;
+		};
+		D566707F17A3467890A523C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A224FFC21174872B7D95C9F;
+			remoteInfo = glew;
+		};
+		F202EE4E3EB74EF0B2F270A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60529FFCB804BBF8A30EDB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A224FFC21174872B7D95C9F;
+			remoteInfo = glew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019ED2EE83FA4FDC8F85520D /* mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = CMU462/deps/glfw/src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		03921E4F722145C0BBBF2D5B /* matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CMU462/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		05ED674A9274452EA4821461 /* posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = CMU462/deps/glfw/src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		07CDDD57A86546AB96E76526 /* libglew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F7B49468EC4410B7C62E13 /* complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CMU462/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		252F7FEB398C461EA611AB64 /* glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CMU462/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		2669F5FF2EB4462C97725134 /* osdfont.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osdfont.c; path = CMU462/src/osdfont.c; sourceTree = SOURCE_ROOT; };
+		27D0C67464F84C6FB1A09DAD /* light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light.cpp; path = src/light.cpp; sourceTree = SOURCE_ROOT; };
+		2F40DCC2844B4BD1A015EEE8 /* iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = CMU462/deps/glfw/src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		3A8E4BDBB9724656A04D926F /* visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CMU462/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		3B06276984AB4ADA93AAB7EB /* glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CMU462/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		3DC5CDF3BF3B44BB94D3133A /* viewer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = viewer.h; path = CMU462/src/viewer.h; sourceTree = SOURCE_ROOT; };
+		3DDD6D351DAC4E9497613CF5 /* meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		43C7A0DE6CFB40F99C628D22 /* color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CMU462/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		48D0882854514964BECFEC99 /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = build/CMU462/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		49616A39C64349D398D2ECED /* collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/collada.h; sourceTree = SOURCE_ROOT; };
+		4E729F63C39D422380E96CAD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = CMU462/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5031363097004A93B56A60A3 /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CMU462/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		552AF963F0BE49C89B0CAEA8 /* collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/collada.cpp; sourceTree = SOURCE_ROOT; };
+		5757034BA19545DB96A1380B /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CMU462/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		57F65E190AAE4FB682724654 /* vector3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector3D.h; path = CMU462/src/vector3D.h; sourceTree = SOURCE_ROOT; };
+		5837448A685F4F9DAD015BB2 /* light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/light.h; sourceTree = SOURCE_ROOT; };
+		63A632D6489743E9A228BFFF /* student_code.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = student_code.cpp; path = /Users/wanghan/asst2_meshedit/src/student_code.cpp; sourceTree = "<absolute>"; };
+		6F6540831B0A42739362D94B /* matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CMU462/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		73D09ED1E8C34D299D989E04 /* quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CMU462/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		745CDC89887441C394399803 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7550178F285A4E9FB6EDB220 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7A62DD33AAAE488295E4B013 /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CMU462/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		7B2EB0DE6FEE46C29BF398F3 /* posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = CMU462/deps/glfw/src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		87333CEFEBA742F886322EB4 /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CMU462/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		8742490970A64E61ADC5A55B /* libCMU462.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCMU462.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8816462AD16146DD82E34945 /* scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene.h; sourceTree = SOURCE_ROOT; };
+		8871BC9F4E654BDFA8124232 /* material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/material.h; sourceTree = SOURCE_ROOT; };
+		888F21E686DE4B328E5B58B5 /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CMU462/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		8B4A1ED67D6646CF89006AA1 /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CMU462/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		8FC0B77469BD452F9D4DDD3A /* vector2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector2D.h; path = CMU462/src/vector2D.h; sourceTree = SOURCE_ROOT; };
+		9328290529ED46D088D78199 /* vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CMU462/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		95F91A4F59DF41059CCE2CC4 /* halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		961AE3F6BC72429AA8B70286 /* color.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = color.h; path = CMU462/src/color.h; sourceTree = SOURCE_ROOT; };
+		97BC2EFA05A94782902FED51 /* iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = CMU462/deps/glfw/src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		97D7A35DFC3943CD8D8A73FB /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CMU462/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		9991765D7E9B4903A82287AE /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CMU462/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		9CDAFD74A0B941D786ACC304 /* matrix4x4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix4x4.h; path = CMU462/src/matrix4x4.h; sourceTree = SOURCE_ROOT; };
+		9CF09CCE83D84552A2386398 /* camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		9D9A7855B614440CBB660099 /* quaternion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quaternion.h; path = CMU462/src/quaternion.h; sourceTree = SOURCE_ROOT; };
+		A1BEFE0E8BC34A9DA292B52C /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CMU462/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		A3375CFEDD9D475CAF0C5A34 /* meshedit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = meshedit; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66EC8C868D94C06A919E530 /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CMU462/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		A70EBA4A32A64DA4B619AC25 /* mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/mesh.h; sourceTree = SOURCE_ROOT; };
+		AA615100F938448383511A8A /* complex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = complex.h; path = CMU462/src/complex.h; sourceTree = SOURCE_ROOT; };
+		AD08F93F1FAA4351867E6B7B /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CMU462/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		B08AE10B1E3142C88FAC7E3D /* vector4D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector4D.h; path = CMU462/src/vector4D.h; sourceTree = SOURCE_ROOT; };
+		B0A057CE000B443BB7E5B68F /* material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = src/material.cpp; sourceTree = SOURCE_ROOT; };
+		B25A898D944B41ABB1AF6E4D /* CMU462.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CMU462.h; path = CMU462/src/CMU462.h; sourceTree = SOURCE_ROOT; };
+		B2CBBC7AF52446B3902CBA6E /* camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/camera.h; sourceTree = SOURCE_ROOT; };
+		B615346F847D4875888ED48C /* texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = src/texture.h; sourceTree = SOURCE_ROOT; };
+		B72217B4C7B84CACBE566928 /* renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = CMU462/src/renderer.h; sourceTree = SOURCE_ROOT; };
+		BD8C42C8D82141C2BA056D7B /* osdtext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osdtext.h; path = CMU462/src/osdtext.h; sourceTree = SOURCE_ROOT; };
+		BF480DF211844352B2C28DE4 /* texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/texture.cpp; sourceTree = SOURCE_ROOT; };
+		C4EABAAD2D484A4A92C43717 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		C5AE6DBBB11D47659BF094A1 /* base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CMU462/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		C8FAC45CDF9F4778B6620766 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = CMU462/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CA42E65256CC42E0BA6DA7E3 /* meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		CB19004E2AA64EAF84DA93A7 /* student_code.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = student_code.h; path = src/student_code.h; sourceTree = SOURCE_ROOT; };
+		CE296439607048FABC97D395 /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43B2C92A5E74354A6E3EDED /* scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene.cpp; sourceTree = SOURCE_ROOT; };
+		D455AD75B0354DF9A5875A72 /* viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CMU462/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		D7C9E0553910451B8583DC5C /* tinyxml2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tinyxml2.h; path = CMU462/src/tinyxml2.h; sourceTree = SOURCE_ROOT; };
+		D7D56999D89A48C18188B48C /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CMU462/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		D94D1B6A1A0B47AF829EBA63 /* vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CMU462/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		DAC054F737B04023BED68BBC /* osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CMU462/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		DE7FED4042104A2BBB40E17B /* base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base64.h; path = CMU462/src/base64.h; sourceTree = SOURCE_ROOT; };
+		E12E3C0232BF46F08BBBF32B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = CMU462/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E1BA3BB194FB47BFAF61E128 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = CMU462/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E32B1B148C8248EFBCB716F2 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CMU462/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		E81FF42C15B84C409F9FCF43 /* tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CMU462/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		E96F4034E0D64DE4AA20AE9D /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CMU462/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		EAF85BFB10084CD0A8FD5D2B /* matrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix3x3.h; path = CMU462/src/matrix3x3.h; sourceTree = SOURCE_ROOT; };
+		ED631A3C013A4C0E989E4BF8 /* mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		F047D8FC80E04F109985F155 /* vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CMU462/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		F39ADDFCFDBA4B9F8770ED76 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F88D457082974D2DA1B0E4A4 /* halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		11495D495FA643E9AB39DA84 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5AE6DBBB11D47659BF094A1 /* base64.cpp */,
+				43C7A0DE6CFB40F99C628D22 /* color.cpp */,
+				07F7B49468EC4410B7C62E13 /* complex.cpp */,
+				03921E4F722145C0BBBF2D5B /* matrix3x3.cpp */,
+				6F6540831B0A42739362D94B /* matrix4x4.cpp */,
+				2669F5FF2EB4462C97725134 /* osdfont.c */,
+				DAC054F737B04023BED68BBC /* osdtext.cpp */,
+				73D09ED1E8C34D299D989E04 /* quaternion.cpp */,
+				E81FF42C15B84C409F9FCF43 /* tinyxml2.cpp */,
+				F047D8FC80E04F109985F155 /* vector2D.cpp */,
+				D94D1B6A1A0B47AF829EBA63 /* vector3D.cpp */,
+				9328290529ED46D088D78199 /* vector4D.cpp */,
+				D455AD75B0354DF9A5875A72 /* viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1801EC44B48B48E8B12141B5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B25A898D944B41ABB1AF6E4D /* CMU462.h */,
+				DE7FED4042104A2BBB40E17B /* base64.h */,
+				961AE3F6BC72429AA8B70286 /* color.h */,
+				AA615100F938448383511A8A /* complex.h */,
+				EAF85BFB10084CD0A8FD5D2B /* matrix3x3.h */,
+				9CDAFD74A0B941D786ACC304 /* matrix4x4.h */,
+				BD8C42C8D82141C2BA056D7B /* osdtext.h */,
+				9D9A7855B614440CBB660099 /* quaternion.h */,
+				B72217B4C7B84CACBE566928 /* renderer.h */,
+				D7C9E0553910451B8583DC5C /* tinyxml2.h */,
+				8FC0B77469BD452F9D4DDD3A /* vector2D.h */,
+				57F65E190AAE4FB682724654 /* vector3D.h */,
+				B08AE10B1E3142C88FAC7E3D /* vector4D.h */,
+				3DC5CDF3BF3B44BB94D3133A /* viewer.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1C8D739B211F45E6880D31EC /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				D80B58F4580A48E3BD9B8E85 /* Source Files */,
+				C8FAC45CDF9F4778B6620766 /* CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		21BCE79A26304B7F8B3AEC18 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2CBBC7AF52446B3902CBA6E /* camera.h */,
+				49616A39C64349D398D2ECED /* collada.h */,
+				95F91A4F59DF41059CCE2CC4 /* halfEdgeMesh.h */,
+				5837448A685F4F9DAD015BB2 /* light.h */,
+				8871BC9F4E654BDFA8124232 /* material.h */,
+				A70EBA4A32A64DA4B619AC25 /* mesh.h */,
+				CA42E65256CC42E0BA6DA7E3 /* meshEdit.h */,
+				8816462AD16146DD82E34945 /* scene.h */,
+				CB19004E2AA64EAF84DA93A7 /* student_code.h */,
+				B615346F847D4875888ED48C /* texture.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		24A889371A494626882FCB19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3B686D0F03544AACBE035E74 /* ZERO_CHECK */,
+				768ABDD84A064F0B9F2DF0B9 /* ALL_BUILD */,
+				1C8D739B211F45E6880D31EC /* glew */,
+				42B55749F7C64ED08BA987D9 /* uninstall */,
+				E20172581CD14D8A93F0BB8B /* GLFW3 */,
+				D9B23E0C494543969301B167 /* CMU462 */,
+				67A03E56C0E54BABB6844997 /* meshedit */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		29AB4DDB84CF4E148777A614 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				9D38E4B2BFDE475D89599C12 /* Source Files */,
+				FBF00E204965443ABC553ED7 /* Header Files */,
+				4E729F63C39D422380E96CAD /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		3B686D0F03544AACBE035E74 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				88B72EC325744937B6CC7899 /* CMake Rules */,
+				F39ADDFCFDBA4B9F8770ED76 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		42B55749F7C64ED08BA987D9 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				A8E050FF46A643AE84DB963E /* CMake Rules */,
+				E1BA3BB194FB47BFAF61E128 /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		67A03E56C0E54BABB6844997 /* meshedit */ = {
+			isa = PBXGroup;
+			children = (
+				FF307A144CFA4437B4A1F6BB /* Source Files */,
+				21BCE79A26304B7F8B3AEC18 /* Header Files */,
+				745CDC89887441C394399803 /* CMakeLists.txt */,
+			);
+			name = meshedit;
+			sourceTree = "<group>";
+		};
+		6ED0CE270F964BC4AA92D1CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6F112A1A85B14297B0084E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07CDDD57A86546AB96E76526 /* libglew.a */,
+				CE296439607048FABC97D395 /* libglfw3.a */,
+				8742490970A64E61ADC5A55B /* libCMU462.a */,
+				A3375CFEDD9D475CAF0C5A34 /* meshedit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		768ABDD84A064F0B9F2DF0B9 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F6C558F1C9BC4FF0AC85F23F /* CMake Rules */,
+				7550178F285A4E9FB6EDB220 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		88B72EC325744937B6CC7899 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		914E74DC0F5F43CE9226EED3 = {
+			isa = PBXGroup;
+			children = (
+				24A889371A494626882FCB19 /* Sources */,
+				6ED0CE270F964BC4AA92D1CC /* Resources */,
+				6F112A1A85B14297B0084E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D38E4B2BFDE475D89599C12 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				87333CEFEBA742F886322EB4 /* cocoa_init.m */,
+				9991765D7E9B4903A82287AE /* cocoa_monitor.m */,
+				A66EC8C868D94C06A919E530 /* cocoa_window.m */,
+				97D7A35DFC3943CD8D8A73FB /* context.c */,
+				AD08F93F1FAA4351867E6B7B /* init.c */,
+				D7D56999D89A48C18188B48C /* input.c */,
+				97BC2EFA05A94782902FED51 /* iokit_joystick.m */,
+				019ED2EE83FA4FDC8F85520D /* mach_time.c */,
+				E96F4034E0D64DE4AA20AE9D /* monitor.c */,
+				E32B1B148C8248EFBCB716F2 /* nsgl_context.m */,
+				05ED674A9274452EA4821461 /* posix_tls.c */,
+				8B4A1ED67D6646CF89006AA1 /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A8E050FF46A643AE84DB963E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D80B58F4580A48E3BD9B8E85 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B06276984AB4ADA93AAB7EB /* glew.c */,
+				252F7FEB398C461EA611AB64 /* glewinfo.c */,
+				3A8E4BDBB9724656A04D926F /* visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D9B23E0C494543969301B167 /* CMU462 */ = {
+			isa = PBXGroup;
+			children = (
+				11495D495FA643E9AB39DA84 /* Source Files */,
+				1801EC44B48B48E8B12141B5 /* Header Files */,
+				E12E3C0232BF46F08BBBF32B /* CMakeLists.txt */,
+			);
+			name = CMU462;
+			sourceTree = "<group>";
+		};
+		E20172581CD14D8A93F0BB8B /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				29AB4DDB84CF4E148777A614 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		F6C558F1C9BC4FF0AC85F23F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FBF00E204965443ABC553ED7 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5757034BA19545DB96A1380B /* glfw3.h */,
+				7A62DD33AAAE488295E4B013 /* glfw3native.h */,
+				888F21E686DE4B328E5B58B5 /* cocoa_platform.h */,
+				A1BEFE0E8BC34A9DA292B52C /* internal.h */,
+				2F40DCC2844B4BD1A015EEE8 /* iokit_joystick.h */,
+				5031363097004A93B56A60A3 /* nsgl_context.h */,
+				7B2EB0DE6FEE46C29BF398F3 /* posix_tls.h */,
+				48D0882854514964BECFEC99 /* glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FF307A144CFA4437B4A1F6BB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CF09CCE83D84552A2386398 /* camera.cpp */,
+				552AF963F0BE49C89B0CAEA8 /* collada.cpp */,
+				F88D457082974D2DA1B0E4A4 /* halfEdgeMesh.cpp */,
+				27D0C67464F84C6FB1A09DAD /* light.cpp */,
+				C4EABAAD2D484A4A92C43717 /* main.cpp */,
+				B0A057CE000B443BB7E5B68F /* material.cpp */,
+				ED631A3C013A4C0E989E4BF8 /* mesh.cpp */,
+				3DDD6D351DAC4E9497613CF5 /* meshEdit.cpp */,
+				D43B2C92A5E74354A6E3EDED /* scene.cpp */,
+				63A632D6489743E9A228BFFF /* student_code.cpp */,
+				BF480DF211844352B2C28DE4 /* texture.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A224FFC21174872B7D95C9F /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D120604FDD7240269576845C /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				B707A01041404FE8BB1B6437 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 07CDDD57A86546AB96E76526 /* libglew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5E65FC0317534611B7E17305 /* meshedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFDB78F8193438191F702DF /* Build configuration list for PBXNativeTarget "meshedit" */;
+			buildPhases = (
+				C8ABB7EE5C2843F79C0FF132 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D00C7FD6980468C8AE9EFB7 /* PBXTargetDependency */,
+				74E0D6221476470F84F513E1 /* PBXTargetDependency */,
+				07773630AD624BDA91BBABAF /* PBXTargetDependency */,
+			);
+			name = meshedit;
+			productName = meshedit;
+			productReference = A3375CFEDD9D475CAF0C5A34 /* meshedit */;
+			productType = "com.apple.product-type.tool";
+		};
+		C39C534FF1FA46898FD01AF1 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3B6C1E3DCF4FE5921B4EFF /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				6CBF6D7F882A4A31976EE086 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = CE296439607048FABC97D395 /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA7BDC5B70B245FDB6F0C7CE /* CMU462 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779371B21FB74C55A2F2E127 /* Build configuration list for PBXNativeTarget "CMU462" */;
+			buildPhases = (
+				E1EA5C600D19410DA8D33C8F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E03081EFFAF4766BC7B4711 /* PBXTargetDependency */,
+			);
+			name = CMU462;
+			productName = CMU462;
+			productReference = 8742490970A64E61ADC5A55B /* libCMU462.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B60529FFCB804BBF8A30EDB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 4D92554BB8514F909B1DEA18 /* Build configuration list for PBXProject "ColladaViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 914E74DC0F5F43CE9226EED3;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				9C1CB5C0BC1B42D198DEC15F /* ALL_BUILD */,
+				058786721DE44AE583ED32A8 /* ZERO_CHECK */,
+				8BCF5B7AE34540DCA2AECB23 /* install */,
+				3A224FFC21174872B7D95C9F /* glew */,
+				17603B337AE840CCBE0E62E9 /* uninstall */,
+				C39C534FF1FA46898FD01AF1 /* glfw */,
+				DA7BDC5B70B245FDB6F0C7CE /* CMU462 */,
+				5E65FC0317534611B7E17305 /* meshedit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26AADF6A749347849846C6D5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/wanghan/asst2_meshedit/build -f /Users/wanghan/asst2_meshedit/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		915A8A7301EA45328AFFF44D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/wanghan/asst2_meshedit/build -f /Users/wanghan/asst2_meshedit/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C27352A86444408AB760E062 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/wanghan/asst2_meshedit/build -f /Users/wanghan/asst2_meshedit/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C7FFFEE387B341B489F761AE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw -f /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CBF6D7F882A4A31976EE086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4AE02048214AAD9E439364 /* cocoa_init.m in Sources */,
+				EAD9907709E04B73A3C99992 /* cocoa_monitor.m in Sources */,
+				BF3AD280C2CB4AFA904FC5B7 /* cocoa_window.m in Sources */,
+				A417BF6778AC4A219797E17E /* context.c in Sources */,
+				31DC4E6C19C9461FBCEF8545 /* init.c in Sources */,
+				81B6177365544F8EAC7D3244 /* input.c in Sources */,
+				5F2A18E2E3FE4E15B1E012A7 /* iokit_joystick.m in Sources */,
+				848292D563694943B1EDA8EB /* mach_time.c in Sources */,
+				054A08F6331D410398762C79 /* monitor.c in Sources */,
+				775D6C0B7AF449D9B0AE1B04 /* nsgl_context.m in Sources */,
+				CB1A7954BEA44D269BEFD073 /* posix_tls.c in Sources */,
+				F39FBA53461947B38CCF232C /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B707A01041404FE8BB1B6437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0181D0FBC47646A9B14D8DC2 /* glew.c in Sources */,
+				62C1A75F83AD4842AB5E8D42 /* glewinfo.c in Sources */,
+				88DD37318A65404DB5209681 /* visualinfo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8ABB7EE5C2843F79C0FF132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9981B0E45B81463BAADE2612 /* camera.cpp in Sources */,
+				E7F74BAA0E64438386CCD4D5 /* collada.cpp in Sources */,
+				DA023CDEC17F4BFAA7483320 /* halfEdgeMesh.cpp in Sources */,
+				1A1BA4D8CC6846F89FAC8827 /* light.cpp in Sources */,
+				2FDE9FDDAE5140549A782FE2 /* main.cpp in Sources */,
+				DA4977906F0443CF82890FD7 /* material.cpp in Sources */,
+				8A6B4E858E1549278C6BE506 /* mesh.cpp in Sources */,
+				13B549182ED949FD958B31A6 /* meshEdit.cpp in Sources */,
+				66CB941D833B4C61A03E1EF7 /* scene.cpp in Sources */,
+				B158E14DAA034ECA861C02EB /* student_code.cpp in Sources */,
+				905FE383CA224EF99CB6A60C /* texture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1EA5C600D19410DA8D33C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86BC53F05804DC1B387C738 /* base64.cpp in Sources */,
+				9FD682E5F1D64421A99040BF /* color.cpp in Sources */,
+				E641F67ED9E64C71BE4EF19E /* complex.cpp in Sources */,
+				FBA2E930AD354806B2E609BD /* matrix3x3.cpp in Sources */,
+				B1A3639E994243F195A9C631 /* matrix4x4.cpp in Sources */,
+				4F31F3E1FF1347B9B3FCB4DD /* osdfont.c in Sources */,
+				CECE7D055D3B45A3B61C459C /* osdtext.cpp in Sources */,
+				EBE6B1CD2C164661AC31B167 /* quaternion.cpp in Sources */,
+				D902676F9BE24391B701EC1A /* tinyxml2.cpp in Sources */,
+				F4A97F829B2942FCA6F3BDDE /* vector2D.cpp in Sources */,
+				BA1F7DC08BEC4B1DA4378C20 /* vector3D.cpp in Sources */,
+				06130933DE1846BD9834E82E /* vector4D.cpp in Sources */,
+				707C8280DC4B451FA987BC44 /* viewer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07773630AD624BDA91BBABAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7BDC5B70B245FDB6F0C7CE /* CMU462 */;
+			targetProxy = 1C559D398F3447A99FFD65A6 /* PBXContainerItemProxy */;
+		};
+		0ECC458EF72A4E8C960C398E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39C534FF1FA46898FD01AF1 /* glfw */;
+			targetProxy = B6D1E116D4DB4C6F88C2CCBF /* PBXContainerItemProxy */;
+		};
+		159B5B97C24F4AB5BEA903D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E65FC0317534611B7E17305 /* meshedit */;
+			targetProxy = D288C1B286334B4E8689762A /* PBXContainerItemProxy */;
+		};
+		74E0D6221476470F84F513E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39C534FF1FA46898FD01AF1 /* glfw */;
+			targetProxy = 1538068879264D2D9599AC45 /* PBXContainerItemProxy */;
+		};
+		7D00C7FD6980468C8AE9EFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A224FFC21174872B7D95C9F /* glew */;
+			targetProxy = A41A989AFA314DBD90578D76 /* PBXContainerItemProxy */;
+		};
+		7E03081EFFAF4766BC7B4711 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A224FFC21174872B7D95C9F /* glew */;
+			targetProxy = F202EE4E3EB74EF0B2F270A5 /* PBXContainerItemProxy */;
+		};
+		B3A54045EF034543BEA65306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 058786721DE44AE583ED32A8 /* ZERO_CHECK */;
+			targetProxy = A9175A9C13CD44168A93DC31 /* PBXContainerItemProxy */;
+		};
+		CB7C4EEC20C5474F9226DA7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7BDC5B70B245FDB6F0C7CE /* CMU462 */;
+			targetProxy = C0D2B9F2B57B4D709687FC30 /* PBXContainerItemProxy */;
+		};
+		D82EE4C85D314DD7AAB384BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1CB5C0BC1B42D198DEC15F /* ALL_BUILD */;
+			targetProxy = A316C09F74D64A16BFFD0658 /* PBXContainerItemProxy */;
+		};
+		E85D8F3B340442EC8C13087E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A224FFC21174872B7D95C9F /* glew */;
+			targetProxy = D566707F17A3467890A523C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		030904AF04814DD7B48C0222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		052EA799544D40F69DA4B565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/include,
+					/usr/local/include/freetype2,
+					/Users/wanghan/asst2_meshedit/CMU462/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CMU462;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		080C402EF1454698B646DFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/wanghan/asst2_meshedit/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/include,
+					/usr/local/include/freetype2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-deprecated-declarations",
+					"-Wno-c++11-extensions",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/wanghan/asst2_meshedit/build/CMU462/src/Debug/libCMU462.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glew/Debug/libglew.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src/Debug/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/usr/local/lib/libfreetype.dylib,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					/usr/local/lib/libfreetype.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		081C1D2735224FA9A1EDB2E3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/src,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-w",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		1B8A4E241DDA4C8285E54515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-w",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glew;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2926A3CE05E9489EA19450AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/include,
+					/usr/local/include/freetype2,
+					/Users/wanghan/asst2_meshedit/CMU462/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -Wno-constant-conversion  ";
+				OTHER_CPLUSPLUSFLAGS = "   -Wno-constant-conversion  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CMU462;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		3F821F470BAA46A49B07C00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		413F2AEA1EEA41C38CC0F177 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/build;
+			};
+			name = MinSizeRel;
+		};
+		4B09E09F73394071B9C68F0B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/src,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-w",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4DA795CD72964A06B6E6E6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		4EE866B20780466B9AFF6991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		5DD7807DE21140C990F2CC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/src,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-w",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6221675C9DED4DBE84DB9B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6614B854B5194B9CA2286A58 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		67F77677BFC4410BB6C93829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7B2509C4719B4C808EF756D0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		93850CCB526743B8ADEEC0E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/wanghan/asst2_meshedit/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/include,
+					/usr/local/include/freetype2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-deprecated-declarations",
+					"-Wno-c++11-extensions",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/wanghan/asst2_meshedit/build/CMU462/src/RelWithDebInfo/libCMU462.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glew/RelWithDebInfo/libglew.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src/RelWithDebInfo/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/usr/local/lib/libfreetype.dylib,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					/usr/local/lib/libfreetype.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		96280647F04D4FB488793F11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/include,
+					/usr/local/include/freetype2,
+					/Users/wanghan/asst2_meshedit/CMU462/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CMU462;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9BF16EA9C3A94729822AE915 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9D2916E1345E409183DC2B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/wanghan/asst2_meshedit/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/include,
+					/usr/local/include/freetype2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-deprecated-declarations",
+					"-Wno-c++11-extensions",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/wanghan/asst2_meshedit/build/CMU462/src/Release/libCMU462.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glew/Release/libglew.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src/Release/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/usr/local/lib/libfreetype.dylib,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					/usr/local/lib/libfreetype.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9DAB26E51F9742BAB8687168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/build;
+			};
+			name = Debug;
+		};
+		A7028C860F5B42888F31E58E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		ABDAA85647C44A03903689BE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-w",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glew;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		AC3BB245CD1447C28447C07D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		AF17A4B92A0443A095FA58D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C20D6E7E8DE745C1909AE1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glew;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C22A44878D2347C58328711D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C361FDB3D25D42C8B6EE8F66 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-w",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glew;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		CA2E2FE863F84707AB318E5D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/wanghan/asst2_meshedit/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/include,
+					/usr/local/include/freetype2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-deprecated-declarations",
+					"-Wno-c++11-extensions",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/wanghan/asst2_meshedit/build/CMU462/src/MinSizeRel/libCMU462.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glew/MinSizeRel/libglew.a,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src/MinSizeRel/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/usr/local/lib/libfreetype.dylib,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					AGL,
+					/usr/local/lib/libfreetype.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D023EB4288304077AB7B7ACE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/include,
+					/usr/local/include/freetype2,
+					/Users/wanghan/asst2_meshedit/CMU462/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wno-constant-conversion",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CMU462;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D074F3195D584680A283A528 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E2E2765D91164BC8A6737D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glew/include,
+					/Users/wanghan/asst2_meshedit/CMU462/deps/glfw/src,
+					/Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-w",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E6D4ADF19266430689921635 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EFD46A5E18444F91AE1BE77C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/deps/glew/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/CMU462/deps/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F770C86E24A34DB98EDA750F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/wanghan/asst2_meshedit/build/build;
+			};
+			name = Release;
+		};
+		FB1757FB23B04E2E9B23223A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/wanghan/asst2_meshedit/CMU462/include;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/wanghan/asst2_meshedit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		378208EB2ACD48BA99FB76C9 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17A4B92A0443A095FA58D1 /* Debug */,
+				67F77677BFC4410BB6C93829 /* Release */,
+				EFD46A5E18444F91AE1BE77C /* MinSizeRel */,
+				E6D4ADF19266430689921635 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		48A345957BF04B659D4722FD /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F821F470BAA46A49B07C00C /* Debug */,
+				4EE866B20780466B9AFF6991 /* Release */,
+				A7028C860F5B42888F31E58E /* MinSizeRel */,
+				7B2509C4719B4C808EF756D0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4D92554BB8514F909B1DEA18 /* Build configuration list for PBXProject "ColladaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAB26E51F9742BAB8687168 /* Debug */,
+				F770C86E24A34DB98EDA750F /* Release */,
+				413F2AEA1EEA41C38CC0F177 /* MinSizeRel */,
+				AC3BB245CD1447C28447C07D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		779371B21FB74C55A2F2E127 /* Build configuration list for PBXNativeTarget "CMU462" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2926A3CE05E9489EA19450AB /* Debug */,
+				052EA799544D40F69DA4B565 /* Release */,
+				96280647F04D4FB488793F11 /* MinSizeRel */,
+				D023EB4288304077AB7B7ACE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7C3B6C1E3DCF4FE5921B4EFF /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E2765D91164BC8A6737D94 /* Debug */,
+				5DD7807DE21140C990F2CC78 /* Release */,
+				4B09E09F73394071B9C68F0B /* MinSizeRel */,
+				081C1D2735224FA9A1EDB2E3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9429A93B02A34C319CABE1FE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030904AF04814DD7B48C0222 /* Debug */,
+				4DA795CD72964A06B6E6E6A9 /* Release */,
+				6614B854B5194B9CA2286A58 /* MinSizeRel */,
+				D074F3195D584680A283A528 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ACFDB78F8193438191F702DF /* Build configuration list for PBXNativeTarget "meshedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080C402EF1454698B646DFDD /* Debug */,
+				9D2916E1345E409183DC2B3D /* Release */,
+				CA2E2FE863F84707AB318E5D /* MinSizeRel */,
+				93850CCB526743B8ADEEC0E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D120604FDD7240269576845C /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20D6E7E8DE745C1909AE1E5 /* Debug */,
+				1B8A4E241DDA4C8285E54515 /* Release */,
+				C361FDB3D25D42C8B6EE8F66 /* MinSizeRel */,
+				ABDAA85647C44A03903689BE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EFFCCD1800B24EC7B69921F8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1757FB23B04E2E9B23223A /* Debug */,
+				6221675C9DED4DBE84DB9B02 /* Release */,
+				C22A44878D2347C58328711D /* MinSizeRel */,
+				9BF16EA9C3A94729822AE915 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B60529FFCB804BBF8A30EDB1 /* Project object */;
+}
